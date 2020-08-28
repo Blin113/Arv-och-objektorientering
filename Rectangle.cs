@@ -9,12 +9,12 @@ namespace Arv
     class Rectangle : Shape
     {
 
-        public Rectangle(int w, int h, int a, int c) : base(w, h, a, c)
+        public Rectangle(int w, int h) : base(w, h)
         {
 
         }
 
-        public void AreaCalc(ref int width, ref int height, ref int area)
+        public void AreaCalc(ref int width, ref int height)
         {
             Console.WriteLine("insert width:");
             width = int.Parse(Console.ReadLine());
@@ -23,12 +23,12 @@ namespace Arv
             height = int.Parse(Console.ReadLine());
 
 
-            area = width * height;
+            int area = width * height;
 
             Console.WriteLine("area: " + area);
         }
 
-        public void CircumferenceCalc(ref int width, ref int height, ref int circumference)
+        public void CircumferenceCalc(ref int width, ref int height)
         {
             Console.WriteLine("insert width:");
             width = int.Parse(Console.ReadLine());
@@ -37,7 +37,7 @@ namespace Arv
             height = int.Parse(Console.ReadLine());
 
 
-            circumference = (width * 2) + (height * 2);
+            int circumference = (width * 2) + (height * 2);
 
             Console.WriteLine("circumference: " + circumference);
         }

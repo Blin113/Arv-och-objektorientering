@@ -22,7 +22,7 @@ namespace Arv
             switch (Choice)
             {
                 case "1":
-                    
+                    instance.AreaCalc();
 
                     break;
 
