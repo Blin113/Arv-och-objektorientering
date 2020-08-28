@@ -4,12 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ARv2
+namespace Arv
 {
     class Shape
     {
-        protected int width;
-        protected int height;
+        private int width;
+        private int height;
+        private int area;
+        private int circumference;
+
+        public Shape(int w, int h, int a, int c)
+        {
+            width = w;
+            height = h;
+            area = a;
+            circumference = c;
+        }
 
         public Shape(int w, int h)
         {
@@ -45,6 +55,38 @@ namespace ARv2
                 else
                 {
                     height = value;
+                }
+            }
+        }
+
+        public int Area
+        {
+            get { return area; }
+            set
+            {
+                if (value < 0)
+                {
+                    area = 0;
+                }
+                else
+                {
+                    area = value;
+                }
+            }
+        }
+
+        public int Circumference
+        {
+            get { return circumference; }
+            set
+            {
+                if (value < 0)
+                {
+                    circumference = 0;
+                }
+                else
+                {
+                    circumference = value;
                 }
             }
         }
