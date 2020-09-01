@@ -8,16 +8,16 @@ namespace Arv
 {
     class Shape
     {
-        private int width;
-        private int height;
+        protected double width;
+        protected double height;
 
-        public Shape(int w, int h)
+        public Shape(double w, double h)
         {
             width = w;
             height = h;
         }
 
-        public int Width
+        public double Width
         {
             get { return width; }
             set
@@ -33,7 +33,7 @@ namespace Arv
             }
         }
 
-        public int Height
+        public double Height
         {
             get { return height; }
             set

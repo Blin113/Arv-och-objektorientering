@@ -10,9 +10,6 @@ namespace Arv
     {
         static void Main(string[] args)
         {
-            var instance = new Rectangle();
-            
-
             Console.WriteLine("1. Rectangle");
             Console.WriteLine("2. Triangle");
 
@@ -22,7 +19,30 @@ namespace Arv
             switch (Choice)
             {
                 case "1":
-                    instance.AreaCalc();
+                    Console.WriteLine("insert width:");
+                    double width = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("insert height:");
+                    double height = double.Parse(Console.ReadLine());
+
+                    var instance = new Rectangle(width, height);
+
+                    Console.WriteLine("area: " + instance.AreaCalc());
+                    Console.WriteLine("curcumference: " + instance.CircumferenceCalc());
+
+                    break;
+
+                case "2":
+                    Console.WriteLine("insert width:");
+                    width = double.Parse(Console.ReadLine());
+
+                    Console.WriteLine("insert height:");
+                    height = double.Parse(Console.ReadLine());
+
+                    var instance0 = new Triangle(width, height);
+
+                    Console.WriteLine("area: " + instance0.AreaCalc());
+                    Console.WriteLine("curcumference: " + instance0.CircumferenceCalc());
 
                     break;
 

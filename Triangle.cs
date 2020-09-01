@@ -8,33 +8,27 @@ namespace Arv
 {
     class Triangle : Shape
     {
-        public Triangle(int w, int h) : base(w, h)
+        public Triangle(double w, double h) : base(w, h)
         {
 
         }
 
-        public void AreaCalc(ref int width, ref int height)
+        public double AreaCalc()
         {
-            Console.WriteLine("insert width:");
-            width = int.Parse(Console.ReadLine());
+            double area = (width * height) / 2;
 
-            Console.WriteLine("insert height:");
-            height = int.Parse(Console.ReadLine());
-
-
-            int area = (width * height) / 2;
-
-            Console.WriteLine("area: " + area);
+            return area;
         }
 
-        public void CircumferenceCalc(ref int width)
+        public double CircumferenceCalc()
         {
-            Console.WriteLine("insert width:");
-            width = int.Parse(Console.ReadLine());
+            double x = (width * width) + (height * height);
 
-            int circumference = width * 3;
+            double hyp = Math.Sqrt(x);
 
-            Console.WriteLine("circumference: " + circumference);
+            double circumference = width + height + hyp;
+
+            return circumference;
         }
     }
 }

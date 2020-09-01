@@ -8,38 +8,23 @@ namespace Arv
 {
     class Rectangle : Shape
     {
-
-        public Rectangle(int w, int h) : base(w, h)
+        public Rectangle(double w, double h) : base(w, h)
         {
 
         }
 
-        public void AreaCalc(ref int width, ref int height)
+        public double AreaCalc()
         {
-            Console.WriteLine("insert width:");
-            width = int.Parse(Console.ReadLine());
+            double area = width * height;
 
-            Console.WriteLine("insert height:");
-            height = int.Parse(Console.ReadLine());
-
-
-            int area = width * height;
-
-            Console.WriteLine("area: " + area);
+            return area;
         }
 
-        public void CircumferenceCalc(ref int width, ref int height)
+        public double CircumferenceCalc()
         {
-            Console.WriteLine("insert width:");
-            width = int.Parse(Console.ReadLine());
+            double circumference = (width * 2) + (height * 2);
 
-            Console.WriteLine("insert height:");
-            height = int.Parse(Console.ReadLine());
-
-
-            int circumference = (width * 2) + (height * 2);
-
-            Console.WriteLine("circumference: " + circumference);
+            return circumference;
         }
 
     }
