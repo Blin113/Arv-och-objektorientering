@@ -30,6 +30,9 @@ namespace Arv
                     Console.WriteLine("area: " + instance.AreaCalc());
                     Console.WriteLine("curcumference: " + instance.CircumferenceCalc());
 
+                    Console.ReadKey();
+                    Main(null);
+
                     break;
 
                 case "2":
@@ -43,6 +46,9 @@ namespace Arv
 
                     Console.WriteLine("area: " + instance0.AreaCalc());
                     Console.WriteLine("curcumference: " + instance0.CircumferenceCalc());
+
+                    Console.ReadKey();
+                    Main(null);
 
                     break;
 
