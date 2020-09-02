@@ -48,5 +48,15 @@ namespace Arv
                 }
             }
         }
+
+        public void AreaCalc()
+        {
+
+        }
+
+        public void CircumferenceCalc()
+        {
+
+        }
     }
 }

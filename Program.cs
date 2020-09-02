@@ -31,6 +31,7 @@ namespace Arv
                     Console.WriteLine("curcumference: " + instance.CircumferenceCalc());
 
                     Console.ReadKey();
+                    Console.Clear();
                     Main(null);
 
                     break;
@@ -48,6 +49,7 @@ namespace Arv
                     Console.WriteLine("curcumference: " + instance0.CircumferenceCalc());
 
                     Console.ReadKey();
+                    Console.Clear();
                     Main(null);
 
                     break;

@@ -26,6 +26,5 @@ namespace Arv
 
             return circumference;
         }
-
     }
 }
