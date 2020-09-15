@@ -13,14 +13,14 @@ namespace Arv
 
         }
 
-        public double AreaCalc()
+        public override void AreaCalc()
         {
             double area = (width * height) / 2;
 
-            return area;
+            Console.WriteLine("area: " + area);
         }
 
-        public double CircumferenceCalc()
+        public override void CircumferenceCalc()
         {
             double x = (width * width) + (height * height);
 
@@ -28,7 +28,7 @@ namespace Arv
 
             double circumference = width + height + hyp;
 
-            return circumference;
+            Console.WriteLine("circumference: " + circumference);
         }
     }
 }

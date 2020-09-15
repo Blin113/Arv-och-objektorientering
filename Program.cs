@@ -10,6 +10,8 @@ namespace Arv
     {
         static void Main(string[] args)
         {
+            Shape obj;
+
             Console.WriteLine("1. Rectangle");
             Console.WriteLine("2. Triangle");
 
@@ -25,10 +27,20 @@ namespace Arv
                     Console.WriteLine("insert height:");
                     double height = double.Parse(Console.ReadLine());
 
-                    var instance = new Rectangle(width, height);
+                    //var instance = new Rectangle(width, height);
 
-                    Console.WriteLine("area: " + instance.AreaCalc());
-                    Console.WriteLine("curcumference: " + instance.CircumferenceCalc());
+                    //Shape shape = new Shape(width, height);
+
+                    //Rectangle S = new Rectangle(width, height);
+
+                    //S.AreaCalc();
+                    //S.CircumferenceCalc();
+
+                    obj = new Rectangle(width, height);
+
+                    obj.AreaCalc();
+                    obj.CircumferenceCalc();
+
 
                     Console.ReadKey();
                     Console.Clear();
@@ -43,10 +55,17 @@ namespace Arv
                     Console.WriteLine("insert height:");
                     height = double.Parse(Console.ReadLine());
 
-                    var instance0 = new Triangle(width, height);
+                    //var instance0 = new Triangle(width, height);
 
-                    Console.WriteLine("area: " + instance0.AreaCalc());
-                    Console.WriteLine("curcumference: " + instance0.CircumferenceCalc());
+                    //Triangle S0 = new Triangle(width, height);
+
+                    //Console.WriteLine("area: " + S0.AreaCalc());
+                    //Console.WriteLine("curcumference: " + S0.CircumferenceCalc());
+
+                    obj = new Triangle(width, height);
+
+                    obj.AreaCalc();
+                    obj.CircumferenceCalc();
 
                     Console.ReadKey();
                     Console.Clear();

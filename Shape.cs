@@ -49,12 +49,12 @@ namespace Arv
             }
         }
 
-        public void AreaCalc()
+        public virtual void AreaCalc()
         {
-
+            
         }
 
-        public void CircumferenceCalc()
+        public virtual void CircumferenceCalc()
         {
 
         }
